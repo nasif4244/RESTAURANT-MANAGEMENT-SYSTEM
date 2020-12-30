@@ -1,4 +1,6 @@
 <?php
+  session_start();
+  include('controller.php');
   $_SESSION['id'] = $_POST['id'];
-  include("../Model/deleteOrderModel.php");
+  $model->deleteOrder();
   header("Location: ../View/viewOdersManager.php");

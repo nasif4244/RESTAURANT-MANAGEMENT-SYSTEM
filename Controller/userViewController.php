@@ -1,1 +1,3 @@
-<?php include("../Model/userViewModel.php"); ?>
+<?php
+  include('controller.php');
+  $result = $model->userView();

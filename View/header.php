@@ -1,5 +1,6 @@
 <?php
     session_start();
+    if (!isset($_SESSION['method'])) $_SESSION['method'] = 'not-set';
 ?>
 <!DOCTYPE html>
 <html>
